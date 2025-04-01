@@ -30,6 +30,9 @@ section{
 }
 
 .first-wrapper{
-    border: 1p solid green;
+    border: 1px solid green;
 }
 
+.innerdiv{
+    border: 1px solid purple;
+}
