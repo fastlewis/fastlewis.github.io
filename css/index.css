@@ -1,22 +1,22 @@
-.loader{
-    border: 16px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid blue;
-    border-right: 16px solid green;
-    border-bottom: 16px solid red;
-    width: 120px;
-    Height: 120px;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infitine;
-}
-@-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-}
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-} 
+/* .loader{ */
+    /* border: 16px solid #f3f3f3; */
+    /* border-radius: 50%; */
+    /* border-top: 16px solid blue; */
+    /* border-right: 16px solid green; */
+    /* border-bottom: 16px solid red; */
+    /* width: 120px; */
+    /* Height: 120px; */
+    /* -webkit-animation: spin 2s linear infinite; */
+    /* animation: spin 2s linear infitine; */
+/* } */
+/* @-webkit-keyframes spin { */
+    /* 0% { -webkit-transform: rotate(0deg); } */
+    /* 100% { -webkit-transform: rotate(360deg); } */
+/* } */
+/* @keyframes spin { */
+    /* 0% { transform: rotate(0deg); } */
+    /* 100% { transform: rotate(360deg); } */
+/* }  */
 h1{text-align:center; color: white; margin: 10px;}    
 h2{text-align:center; color: white; margin: 10px;}
 p{text-align: center; color: white;}
@@ -24,16 +24,77 @@ body{background-color: rgb(46, 46, 46);}
 img{margin-left: 5px; margin-right: 5px; margin-bottom: 10px; margin-top: 10px;}
 .wip {color: red; text-align: center;}
 
-section{
-    height: auto;
+.voertuigen-section{
+    height: auto;  /*365*/
     border: 5px solid white;
+}
+
+.architectuur-section{
+    height: auto;
+    border: 5px solid white
 }
 
 .first-wrapper{
     border: 3px solid green;
 }
 
-.innerdiv{
-    float: left;
-    border: 1px solid rgb(255, 0, 0);
+/* .innerdiv{ */
+    /* width: 49%; */
+    /* height: 354px; */
+    /* display: inline-block; */
+    /* float: left; */
+    /* border: 1px solid rgb(255, 0, 0); */
+/* } */
+
+
+.voertuigen-section .innerdiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    border: 1px solid red
+}
+
+.architectuur-section .innerdiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    border: 1px solid red
+}
+
+/* .img-voertuigen{ */
+    /* width: 35%; */
+    /* height: 50%; */
+    /* border: 1px solid white; */
+/* } */
+
+.voertuigen-section .img-voertuigen{
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    height: auto;
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+
+.voertuigen-section .img-voertuigen img{
+    width: 100%;
+    height: auto;
+}
+
+.architectuur-section .img-architectuur{
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    height: auto;
+    border: 1px solid orange;
+    box-sizing: border-box;
+}
+
+.architectuur-section .img-architectuur img{
+    width: 100%;
+    height: auto;;
 }
