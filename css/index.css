@@ -25,17 +25,17 @@ img{margin-left: 5px; margin-right: 5px; margin-bottom: 10px; margin-top: 10px;}
 .wip {color: red; text-align: center;}
 
 .voertuigen-section{
-    height: auto;  /*365*/
-    border: 5px solid white;
+    height: auto;
+    /*border: 5px solid white;*/
 }
 
 .architectuur-section{
     height: auto;
-    border: 5px solid white
+    /*border: 5px solid white*/
 }
 
 .first-wrapper{
-    border: 3px solid green;
+    /*border: 3px solid green;*/
 }
 
 /* .innerdiv{ */
@@ -46,25 +46,42 @@ img{margin-left: 5px; margin-right: 5px; margin-bottom: 10px; margin-top: 10px;}
     /* border: 1px solid rgb(255, 0, 0); */
 /* } */
 
-
-.voertuigen-section .innerdiv{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+.hero-banner {
     width: 100%;
-    height: auto;
-    border: 1px solid red
+    margin-bottom: 25px; /* Ruimte tussen de banner en je circuit-grid */
 }
 
-.architectuur-section .innerdiv{
+.banner-container {
+    width: 100%;
+    height: 850px; /* Pas deze hoogte aan naar jouw smaak (bijv. tussen 400px en 600px) */
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Snijdt de foto automatisch cinematisch bij zonder te vervormen */
+    object-position: center 90%; /* Richt de focus iets lager om de auto perfect gecentreerd te houden */
+}
+
+.voertuigen-section .innerdiv {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     width: 100%;
     height: auto;
-    border: 1px solid red
+    /*border: 1px solid red*/
+}
+
+.architectuur-section .innerdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    /*border: 1px solid red*/
 }
 
 /* .img-voertuigen{ */
@@ -73,12 +90,20 @@ img{margin-left: 5px; margin-right: 5px; margin-bottom: 10px; margin-top: 10px;}
     /* border: 1px solid white; */
 /* } */
 
-.voertuigen-section .img-voertuigen{
+.voertuigen-section .img-voertuigen {
     flex: 1 1 calc(33.33% - 20px);
-    max-width: calc(33.33% - 20px);
+    max-width: calc(33.33% - 20x);
     height: auto;
-    border: 1px solid white;
+    /*border: 1px solid white;*/
     box-sizing: border-box;
+}
+
+.voertuigen-section .banner {
+    width: 100%;
+    border: 1px solid magenta;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .voertuigen-section .img-voertuigen img{
@@ -86,15 +111,15 @@ img{margin-left: 5px; margin-right: 5px; margin-bottom: 10px; margin-top: 10px;}
     height: auto;
 }
 
-.architectuur-section .img-architectuur{
+.architectuur-section .img-architectuur {
     flex: 1 1 calc(33.33% - 20px);
     max-width: calc(33.33% - 20px);
     height: auto;
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     box-sizing: border-box;
 }
 
 .architectuur-section .img-architectuur img{
     width: 100%;
-    height: auto;;
+    height: auto;
 }
