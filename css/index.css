@@ -89,6 +89,16 @@ img{margin-left: 5px; margin-right: 5px; margin-bottom: 10px; margin-top: 10px;}
     /*border: 1px solid red*/
 }
 
+.nature-section .innerdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: auto;
+    /*border: 1px solid red*/
+}
+
 /* .img-voertuigen{ */
     /* width: 35%; */
     /* height: 50%; */
