@@ -34,6 +34,11 @@ img{margin-left: 5px; margin-right: 5px; margin-bottom: 10px; margin-top: 10px;}
     /*border: 5px solid white*/
 }
 
+.voertuigen-section{
+    height: auto;
+    /*border: 5px solid white;*/
+}
+
 .first-wrapper{
     /*border: 3px solid green;*/
 }
@@ -122,4 +127,12 @@ img{margin-left: 5px; margin-right: 5px; margin-bottom: 10px; margin-top: 10px;}
 .architectuur-section .img-architectuur img{
     width: 100%;
     height: auto;
+}
+
+.nature-section .img-nature {
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20x);
+    height: auto;
+    /*border: 1px solid white;*/
+    box-sizing: border-box;
 }
